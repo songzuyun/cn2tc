@@ -4,6 +4,10 @@ function isChinese(s) {
   return /[\u4e00-\u9fa5]/.test(s);
 }
 
+export function traditionlize(value) {
+  return trans(value);
+}
+
 export default function () {
   return {
     visitor: {
